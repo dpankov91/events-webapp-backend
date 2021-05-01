@@ -20,6 +20,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Events.Core.Entites\Events.Core.Entites.csproj" />
     <ProjectReference Include="..\Events.Core\Events.Core.csproj" />
+    <ProjectReference Include="..\Events.Infrastructure.Data\Events.Infrastructure.Data.csproj" />
   </ItemGroup>
 
 </Project>

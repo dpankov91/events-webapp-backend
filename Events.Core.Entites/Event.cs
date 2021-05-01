@@ -14,12 +14,12 @@ namespace Events.Core.Entites
 
         public DateTime EventDate { get; set; }
 
+        public string Place { get; set; }
+
         public string AdditionalInfo { get; set; }
 
-        public int? PersonId { get; set; }
-        public Person Person { get; set; }
+        public ICollection<Person> Persons { get; set; }
 
-        public int? CompanyId { get; set; }
-        public Company Company { get; set; }
+        public ICollection<Company> Companies { get; set; }
     }
 }

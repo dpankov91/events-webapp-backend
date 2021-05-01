@@ -8,5 +8,6 @@ namespace Events.Infrastructure.Data
 {
     public interface IDataInitializer
     {
+        void SeedDB(EventAppDBContext _ctx);
     }
 }
