@@ -65,6 +65,11 @@ namespace eventsWebapp
             };
             services.AddControllers().AddNewtonsoftJson(o => o.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore);
             #endregion
+            #region CORS
+            services.AddCors(options => options.AddPolicy("AllowEverything", builder => builder.AllowAnyOrigin()
+                                                                                               .AllowAnyMethod()
+                                                                                               .AllowAnyHeader()));
+            #endregion
             services.AddControllers();
         }
 
@@ -85,6 +90,8 @@ namespace eventsWebapp
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "eventsWebapp v1"));
             }
+
+            app.UseCors("AllowEverything");
 
             app.UseHttpsRedirection();
 

@@ -99,7 +99,7 @@ namespace eventsWebapp.Controllers
                     return BadRequest("Enter correct id. ID must be bigger than 1");
                 }
                 _companyService.DeleteCompany(id);
-                return Ok("Company with id:" + id + " successfully deleted");
+                return Ok();
             }
             catch (System.Exception)
             {

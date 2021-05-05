@@ -99,7 +99,7 @@ namespace eventsWebapp.Controllers
                     return BadRequest("Enter correct id. ID must be bigger than 1");
                 }
                 _eventService.DeleteEvent(id);
-                return Ok("Event with id:" + id + " successfully deleted");
+                return Ok();
             }
             catch (System.Exception)
             {
