@@ -53,77 +53,61 @@ namespace Events.Infrastructure.Data
 
             Event event4 = new Event()
             {
-                EventName = "Baltic Festival",
+                EventName = "Jalgpalli turniir",
                 EventDate = new DateTime(2021, 05, 02),
-                Place = "Parnu",
-                AdditionalInfo = "Biggest music and art festival in baltic region"
+                Place = "Viljandi",
+                AdditionalInfo = "Sport on meie elu"
             };
             _eventRepo.CreateEvent(event4);
 
             Event event5 = new Event()
             {
-                EventName = "Baltic Festival",
-                EventDate = new DateTime(2021, 05, 28),
-                Place = "Parnu",
-                AdditionalInfo = "Biggest music and art festival in baltic region"
+                EventName = "Cyber hommik",
+                EventDate = new DateTime(2021, 05, 21),
+                Place = "Saue",
+                AdditionalInfo = "Parim mangijad Eestis"
             };
             _eventRepo.CreateEvent(event5);
             Event event6 = new Event()
             {
-                EventName = "Baltic Festival",
+                EventName = "Pub Crawl",
                 EventDate = new DateTime(2021, 05, 28),
-                Place = "Parnu",
-                AdditionalInfo = "Biggest music and art festival in baltic region"
+                Place = "Tartu",
+                AdditionalInfo = "Head ood, lapsed"
             };
             _eventRepo.CreateEvent(event6);
             Event event7 = new Event()
             {
-                EventName = "Baltic Festival",
-                EventDate = new DateTime(2021, 05, 28),
+                EventName = "Marafooni jooks",
+                EventDate = new DateTime(2021, 05, 03),
                 Place = "Parnu",
                 AdditionalInfo = "Biggest music and art festival in baltic region"
             };
             _eventRepo.CreateEvent(event7);
             Event event8 = new Event()
             {
-                EventName = "Baltic Festival",
-                EventDate = new DateTime(2021, 05, 28),
-                Place = "Parnu",
-                AdditionalInfo = "Biggest music and art festival in baltic region"
+                EventName = "Valga mesi festival",
+                EventDate = new DateTime(2021, 05, 22),
+                Place = "Valga",
+                AdditionalInfo = "Tule sa ei kahetse"
             };
             _eventRepo.CreateEvent(event8);
             Event event9 = new Event()
             {
-                EventName = "Baltic Festival",
-                EventDate = new DateTime(2021, 05, 28),
-                Place = "Parnu",
-                AdditionalInfo = "Biggest music and art festival in baltic region"
+                EventName = "Stroomi ranna koristamine",
+                EventDate = new DateTime(2021, 06, 28),
+                Place = "Tallinn",
+                AdditionalInfo = "Elame ilma plastikut"
             };
             _eventRepo.CreateEvent(event9);
             Event event10 = new Event()
             {
-                EventName = "Baltic Festival",
-                EventDate = new DateTime(2021, 05, 28),
-                Place = "Parnu",
-                AdditionalInfo = "Biggest music and art festival in baltic region"
+                EventName = "Taani ajaloo",
+                EventDate = new DateTime(2021, 05, 27),
+                Place = "Mustvee",
+                AdditionalInfo = "Ajaloo festival"
             };
             _eventRepo.CreateEvent(event10);
-            Event event11 = new Event()
-            {
-                EventName = "Baltic Festival",
-                EventDate = new DateTime(2021, 05, 28),
-                Place = "Parnu",
-                AdditionalInfo = "Biggest music and art festival in baltic region"
-            };
-            _eventRepo.CreateEvent(event11);
-            Event event12 = new Event()
-            {
-                EventName = "Baltic Festival",
-                EventDate = new DateTime(2021, 05, 28),
-                Place = "Parnu",
-                AdditionalInfo = "Biggest music and art festival in baltic region"
-            };
-            _eventRepo.CreateEvent(event12);
             #endregion
             #region Companies
             Company company1 = new Company()
@@ -153,6 +137,33 @@ namespace Events.Infrastructure.Data
                 AdditionalInfo = "Travel agency"
             };
             _companyRepo.CreateCompany(company3);
+            Company company4 = new Company()
+            {
+                CompanyName = "Brother OU",
+                CompanyCode = 348921,
+                isCash = true,
+                EventId = 4,
+                AdditionalInfo = "Koristus"
+            };
+            _companyRepo.CreateCompany(company4);
+            Company company5 = new Company()
+            {
+                CompanyName = "AS ABB",
+                CompanyCode = 348921,
+                isCash = true,
+                EventId = 5,
+                AdditionalInfo = "Tehas"
+            };
+            _companyRepo.CreateCompany(company5);
+            Company company6 = new Company()
+            {
+                CompanyName = "Travel agentuur",
+                CompanyCode = 348921,
+                isCash = true,
+                EventId = 6,
+                AdditionalInfo = "Travel agency"
+            };
+            _companyRepo.CreateCompany(company6);
             #endregion
             #region Persons
             Person person1 = new Person()
@@ -191,7 +202,7 @@ namespace Events.Infrastructure.Data
                 LastName = "Lasikovits",
                 IdNumber = 391525321,
                 isCash = false,
-                EventId = 3,
+                EventId = 4,
                 AdditionalInfo = "Kasvataja 'Lepatrinu' lasteajas"
             };
             _personRepo.CreatePerson(person4);
@@ -201,7 +212,7 @@ namespace Events.Infrastructure.Data
                 LastName = "Lasikovits",
                 IdNumber = 391525321,
                 isCash = false,
-                EventId = 3,
+                EventId = 5,
                 AdditionalInfo = "Kasvataja 'Lepatrinu' lasteajas"
             };
             _personRepo.CreatePerson(person5);
@@ -211,7 +222,7 @@ namespace Events.Infrastructure.Data
                 LastName = "Lasikovits",
                 IdNumber = 391525321,
                 isCash = false,
-                EventId = 3,
+                EventId = 6,
                 AdditionalInfo = "Kasvataja 'Lepatrinu' lasteajas"
             };
             _personRepo.CreatePerson(person6);

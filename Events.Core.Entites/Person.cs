@@ -14,7 +14,7 @@ namespace Events.Core.Entites
 
         public string LastName { get; set; }
 
-        public int IdNumber { get; set; }
+        public long IdNumber { get; set; }
 
         public bool isCash { get; set; }
 
