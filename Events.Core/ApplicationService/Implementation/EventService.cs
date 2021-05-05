@@ -15,6 +15,10 @@ namespace Events.Core.ApplicationService.Implementation
 
         public EventService(IEventRepository eventRepository)
         {
+            if (eventRepository == null)
+            {
+                throw new NullReferenceException();
+            }
             _eventRepo = eventRepository;
         }
         public List<Event> GetAllEvents()

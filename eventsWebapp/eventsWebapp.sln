@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eventsWebapp", "eventsWebapp.csproj", "{54C61021-9E23-49B5-A15C-EA2D999FF59A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eventsWebapp", "eventsWebapp.csproj", "{54C61021-9E23-49B5-A15C-EA2D999FF59A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{5E8D0FAD-6E62-4457-AE30-4E6B11BB5FA7}"
 EndProject
@@ -11,11 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{FCA9EC0A-4E58-48A3-8737-B6C63787BB3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events.Core.Entites", "..\Events.Core.Entites\Events.Core.Entites.csproj", "{F956AB1C-D384-4A23-81CB-123259673281}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Events.Core.Entites", "..\Events.Core.Entites\Events.Core.Entites.csproj", "{F956AB1C-D384-4A23-81CB-123259673281}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events.Core", "..\Events.Core\Events.Core.csproj", "{CF0D77E2-6C88-4D60-BFCD-D0E4F0955D70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Events.Core", "..\Events.Core\Events.Core.csproj", "{CF0D77E2-6C88-4D60-BFCD-D0E4F0955D70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events.Infrastructure.Data", "..\Events.Infrastructure.Data\Events.Infrastructure.Data.csproj", "{F08C89BF-142A-4624-AF3C-27372F8C7E79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Events.Infrastructure.Data", "..\Events.Infrastructure.Data\Events.Infrastructure.Data.csproj", "{F08C89BF-142A-4624-AF3C-27372F8C7E79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events.Core.Test", "..\Events.Core.Test\Events.Core.Test.csproj", "{F5F04C26-152E-4A93-9577-C20BAA9E46F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{F08C89BF-142A-4624-AF3C-27372F8C7E79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F08C89BF-142A-4624-AF3C-27372F8C7E79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F08C89BF-142A-4624-AF3C-27372F8C7E79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5F04C26-152E-4A93-9577-C20BAA9E46F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5F04C26-152E-4A93-9577-C20BAA9E46F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5F04C26-152E-4A93-9577-C20BAA9E46F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5F04C26-152E-4A93-9577-C20BAA9E46F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,6 +53,7 @@ Global
 		{F956AB1C-D384-4A23-81CB-123259673281} = {5E8D0FAD-6E62-4457-AE30-4E6B11BB5FA7}
 		{CF0D77E2-6C88-4D60-BFCD-D0E4F0955D70} = {5E8D0FAD-6E62-4457-AE30-4E6B11BB5FA7}
 		{F08C89BF-142A-4624-AF3C-27372F8C7E79} = {F7F81F99-B52F-4056-BDE9-607C1E59F7C4}
+		{F5F04C26-152E-4A93-9577-C20BAA9E46F9} = {FCA9EC0A-4E58-48A3-8737-B6C63787BB3D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6BAF2DFF-7943-4F04-AA5A-8AD755F8DAF2}

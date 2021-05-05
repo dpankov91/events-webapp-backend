@@ -15,6 +15,10 @@ namespace Events.Core.ApplicationService.Implementation
 
         public CompanyService(ICompanyRepository companyRepository)
         {
+            if (companyRepository == null)
+            {
+                throw new NullReferenceException();
+            }
             _companyRepo = companyRepository;
         }
 

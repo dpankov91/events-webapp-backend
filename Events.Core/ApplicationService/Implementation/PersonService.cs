@@ -15,6 +15,10 @@ namespace Events.Core.ApplicationService.Implementation
 
         public PersonService(IPersonRepository personRepository)
         {
+            if (personRepository == null)
+            {
+                throw new NullReferenceException();
+            }
             _personRepo = personRepository;
         }
 
